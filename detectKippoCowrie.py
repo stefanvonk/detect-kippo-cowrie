@@ -55,7 +55,7 @@ def connectToSSH(host, port):
             if VERBOSE:
                 print("[+] %s:%d advertised itself as OpenSSH. Continuing..." % (host, port))
             else:
-                printf("[!] %s:%d does not advertise itself as OpenSSH. Quitting..." % (host, port))
+                print("[!] %s:%d does not advertise itself as OpenSSH. Quitting..." % (host, port))
                 return False
 
     except Exception as err:
